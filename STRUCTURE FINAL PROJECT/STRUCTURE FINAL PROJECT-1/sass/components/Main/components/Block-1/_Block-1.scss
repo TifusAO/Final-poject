@@ -3,23 +3,28 @@ main{
     overflow: hidden;
 }
 
-main section:first-child {
+main div:first-child{
+ margin-bottom: 400px;
+}
+
+main div:first-child section:first-child {
     display: flex;
     margin-left: 8%;
     margin-right: 25px;
     margin-top: 100px;
-    width: 60%;
+    width: 50%;
+    display: block
 }
 
 
 
-main section:first-child p:first-child{
+main div:first-child section:first-child p:first-child{
     color: #FA9021;
     font-size: 20px;
     margin-bottom: 17px;
 }
 
-main section:first-child section{
+main div:first-child section:first-child section{
     display: inline;
     z-index: 2;
 
@@ -39,7 +44,7 @@ main h1{
 
 
 
-main section:first-child nav a{
+main div:first-child section:first-child nav a{
     color: aliceblue;
     background-color: #FA9021;
     padding: 15px 30px 0px 30px;
@@ -53,25 +58,26 @@ main section:first-child nav a{
     text-align: center;
 }
 
-main section:nth-child(2){
+main div:first-child section:nth-child(2){
     align-items: center;
     display: flex;
+    overflow: hidden;
 }
 
-main section:nth-child(2) section{
+main div:first-child section:nth-child(2) div{
     align-items: center;
     display: flex;
     position: absolute;
-    top:20%;
-    left: 50%;
+    top: 21%;
+    right: 30%;
 }
 
-main section:nth-child(2) section img{
+main div:first-child section:nth-child(2) div img{
     height: 30px;
     margin-right: 5px;
 }
 
-main section:nth-child(2) section p{
+main div:first-child section:nth-child(2) div p{
     color: aliceblue;
     font-size: 30px;
     font-weight: 700;
@@ -79,31 +85,31 @@ main section:nth-child(2) section p{
 }
 
 
-main section:nth-child(2) img:nth-child(2){
+main div:first-child section:nth-child(2) img:nth-child(2){
     height: 100px;
     position: absolute;
-    top: 17%;
-    right: 30%;
+    top: 10%;
+    right: 20%;
 }
 
-main section:nth-child(2) img:nth-child(3){
+main div:first-child section:nth-child(2) img:nth-child(3){
     height: 65px;
     position: absolute;
-    top: 20%;
-    right: 10%;
+    top: 17%;
+    right: 7%;
 }
 
-main section:nth-child(2) img:nth-child(4){
+main div:first-child section:nth-child(2) img:nth-child(4){
     position: absolute;
-    top: -5%;
-    right: -3%;
+    top: 0%;
+    right: 0%;
+    
 }
 
 
-@media screen and (max-width:1220px) {
-    main section:nth-child(2) img:nth-child(4){
-        position: absolute;
-        top: -5%;
-        right: -20%;
+@media screen and (max-width:1300px) {
+    
+    main div:first-child section:first-child {
+        width: 30%;
     }
 }
