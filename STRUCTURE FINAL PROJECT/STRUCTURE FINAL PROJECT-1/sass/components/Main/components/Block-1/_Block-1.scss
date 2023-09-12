@@ -1,10 +1,10 @@
 main{
     background-color: black;
-    overflow: hidden;
 }
 
 main div:first-child{
  margin-bottom: 400px;
+ overflow: hidden;
 }
 
 main div:first-child section:first-child {
@@ -12,7 +12,7 @@ main div:first-child section:first-child {
     margin-left: 8%;
     margin-right: 25px;
     margin-top: 100px;
-    width: 50%;
+    width: 40%;
     display: block
 }
 
@@ -68,7 +68,7 @@ main div:first-child section:nth-child(2) div{
     align-items: center;
     display: flex;
     position: absolute;
-    top: 21%;
+    top: 5%;
     right: 30%;
 }
 
@@ -88,21 +88,23 @@ main div:first-child section:nth-child(2) div p{
 main div:first-child section:nth-child(2) img:nth-child(2){
     height: 100px;
     position: absolute;
-    top: 10%;
+    top: 1%;
     right: 20%;
 }
 
 main div:first-child section:nth-child(2) img:nth-child(3){
     height: 65px;
     position: absolute;
-    top: 17%;
+    top: 3%;
     right: 7%;
 }
 
 main div:first-child section:nth-child(2) img:nth-child(4){
     position: absolute;
     top: 0%;
-    right: 0%;
+    right: -10%;
+    height: 700px;
+    width: 600px;
     
 }
 
@@ -110,6 +112,10 @@ main div:first-child section:nth-child(2) img:nth-child(4){
 @media screen and (max-width:1300px) {
     
     main div:first-child section:first-child {
-        width: 30%;
+        width: 25%;
+    }
+
+    main div:first-child section:nth-child(2) img:nth-child(4){
+        right: -20%;
     }
 }

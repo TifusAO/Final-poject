@@ -11,6 +11,13 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+}
+
 main{
     width: auto;
+    background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%, #000 0.82%);
+    backdrop-filter: blur(7px);
+    overflow: hidden;
 }
