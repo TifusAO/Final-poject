@@ -2,12 +2,13 @@ main{
     background-color: black;
 }
 
-main div:first-child{
+.block-1{
  margin-bottom: 400px;
  overflow: hidden;
+ display: flex;
 }
 
-main div:first-child section:first-child {
+.block-1-text {
     display: flex;
     margin-left: 8%;
     margin-right: 25px;
@@ -18,17 +19,19 @@ main div:first-child section:first-child {
 
 
 
-main div:first-child section:first-child p:first-child{
+.block-1-text p:first-child{
     color: #FA9021;
-    font-size: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 208.5%;
     margin-bottom: 17px;
 }
 
-main div:first-child section:first-child section{
-    display: inline;
-    z-index: 2;
-
+.block-1-text p:first-child span{
+    color: aliceblue;
 }
+
+
 
 main p{
     color: aliceblue;
@@ -44,7 +47,7 @@ main h1{
 
 
 
-main div:first-child section:first-child nav a{
+.block-1-text nav a{
     color: aliceblue;
     background-color: #FA9021;
     padding: 15px 30px 0px 30px;
@@ -58,64 +61,12 @@ main div:first-child section:first-child nav a{
     text-align: center;
 }
 
-main div:first-child section:nth-child(2){
-    align-items: center;
-    display: flex;
-    overflow: hidden;
+.block-1-text nav img{
+
+    margin-left: 18px;
 }
 
-main div:first-child section:nth-child(2) div{
-    align-items: center;
-    display: flex;
-    position: absolute;
-    top: 5%;
-    right: 30%;
-}
+.block-1-img img{
+    width: 80%;
 
-main div:first-child section:nth-child(2) div img{
-    height: 30px;
-    margin-right: 5px;
-}
-
-main div:first-child section:nth-child(2) div p{
-    color: aliceblue;
-    font-size: 30px;
-    font-weight: 700;
-   
-}
-
-
-main div:first-child section:nth-child(2) img:nth-child(2){
-    height: 100px;
-    position: absolute;
-    top: 1%;
-    right: 20%;
-}
-
-main div:first-child section:nth-child(2) img:nth-child(3){
-    height: 65px;
-    position: absolute;
-    top: 3%;
-    right: 7%;
-}
-
-main div:first-child section:nth-child(2) img:nth-child(4){
-    position: absolute;
-    top: 0%;
-    right: -10%;
-    height: 700px;
-    width: 600px;
-    
-}
-
-
-@media screen and (max-width:1300px) {
-    
-    main div:first-child section:first-child {
-        width: 25%;
-    }
-
-    main div:first-child section:nth-child(2) img:nth-child(4){
-        right: -20%;
-    }
 }
